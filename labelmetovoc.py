@@ -37,6 +37,6 @@ def labelme_to_paddleocr(labelme_json_dir, output_txt_path):
                         line = f"{jpg_path}\t{json.dumps(annotations, ensure_ascii=False)}\n"
                         output_file.write(line)
 
-labelme_json_dir = ''
-output_txt_path = ''
+labelme_json_dir = 'your_labelme_json_dir'
+output_txt_path = 'your_output_txt_path'
 labelme_to_paddleocr(labelme_json_dir, output_txt_path)
